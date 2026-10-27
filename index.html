@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KV - Personal Knowledge Vault</title>
+
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-white font-['Inter'] text-slate-900">
+
+    <!-- Navbar -->
+    <header class="bg-white">
+        <nav class="mx-auto flex min-h-[68px] max-w-[1100px] items-center justify-between px-5">
+
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-1">
+                <span class="text-3xl">💡</span>
+                <div>
+                    <h2 class="text-[30px] font-extrabold leading-none text-[#438e68]">KV</h2>
+                    <p class="text-[6px] font-semibold text-slate-700">Knowledge Vault</p>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="hidden items-center gap-8 md:flex">
+                <a href="#features" class="text-[12px] font-semibold text-[#F54927] hover:text-[#438e68]">Features</a>
+                <a href="#how-it-works" class="text-[12px] font-semibold text-slate-800 hover:text-[#438e68]">How It Works</a>
+                <a href="#difference" class="text-[12px] font-semibold text-slate-800 hover:text-[#438e68]">Why It's Different</a>
+            </div>
+
+            <a href="#get-started" class="hidden rounded-sm bg-[#438e68] px-4 py-2.5 text-[11px] font-bold text-white transition hover:bg-[#347654] md:inline-block">
+                Get Early Access
+            </a>
+
+            <!-- Mobile Menu Link -->
+            <a href="#features" aria-label="Go to features" class="text-2xl text-slate-800 md:hidden">
+                ☰
+                
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="relative flex min-h-[390px] items-center justify-center overflow-hidden bg-cover bg-center px-5 py-20 sm:min-h-[420px] lg:min-h-[450px]"
+        style="background-image: url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=2000&q=85');">
+
+        <!-- Dark Overlay -->
+        <div class="absolute inset-0 bg-[#071d32]/85"></div>
+
+        <div class="relative z-10 mx-auto max-w-[780px] text-center">
+
+            <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-[11px] font-semibold text-[#438e68]">
+                <span class="h-2 w-2 rounded-full bg-[#438e68]"></span>
+                Early Access Now Open
+            </div>
+
+            <h1 class="text-[34px] font-extrabold leading-[1.15] tracking-tight text-slate-100 sm:text-5xl lg:text-[44px]">
+                Structured Thinking,
+                <span class="mt-1 block text-[#2cb878]">Not Just Note-Taking.</span>
+            </h1>
+
+            <p class="mx-auto mt-4 max-w-[550px] text-[12px] leading-6 text-slate-200 sm:text-[13px]">
+                A private space to store notes, links, and learning summaries — designed to
+                help you think clearly, connect ideas, and turn learning into long-term knowledge.
+            </p>
+
+            <div class="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row">
+                <a href="#get-started" class="inline-flex items-center gap-2 rounded-sm bg-[#438e68] px-4 py-3 text-xs font-bold text-white transition hover:bg-[#347654]">
+                    Start Building Your Vault
+                    <span>→</span>
+                </a>
+
+                <a href="#how-it-works" class="inline-flex items-center gap-2 rounded-sm border border-white/60 px-4 py-3 text-xs font-bold text-white transition hover:bg-white/10">
+                    <span>▷</span>
+                    See How It Works
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section id="features" class="bg-[#fafafa] px-5 py-10 sm:px-8 sm:py-12">
+
+        <div class="mx-auto max-w-[1100px]">
+
+            <div class="mb-8 text-center">
+                <h2 class="text-[25px] font-extrabold tracking-tight text-[#071d32] sm:text-[30px]">
+                    Notes Don't Fail, Structure Does.
+                </h2>
+
+                <p class="mt-3 text-xs leading-5 text-slate-500 sm:text-[13px]">
+                    You're not bad at learning. Your tools just weren't built for how knowledge actually works.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Card 1 -->
+                <div class="flex min-h-[180px] flex-col items-center rounded-md border border-gray-100 bg-white px-5 py-7 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff5559] text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-[15px] font-bold text-[#071d32]">Scattered Notes</h3>
+                    <p class="mt-3 text-xs leading-[1.6] text-slate-500">
+                        Your ideas live in 10 different apps, none of them connected.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex min-h-[180px] flex-col items-center rounded-md border border-gray-100 bg-white px-5 py-7 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff5559] text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 4.5A2.5 2.5 0 0 1 8.5 2H20v18H8.5A2.5 2.5 0 0 0 6 22V4.5Zm0 0A2.5 2.5 0 0 0 3.5 2H4v18h4.5"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m12 8 1.5 1.5L17 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-[15px] font-bold text-[#071d32]">Bookmark Overload</h3>
+                    <p class="mt-3 text-xs leading-[1.6] text-slate-500">
+                        Hundreds of saved links you'll never revisit or remember.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex min-h-[180px] flex-col items-center rounded-md border border-gray-100 bg-white px-5 py-7 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff5559] text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.5a3 3 0 0 0-5 2.3A3 3 0 0 0 4 11a3 3 0 0 0 1 5.8A3 3 0 0 0 10 19v-4l-2-2m7-9.5a3 3 0 0 1 5 2.3A3 3 0 0 1 20 11a3 3 0 0 1-1 5.8A3 3 0 0 1 14 19v-4l2-2M10 8l2-2 2 2m-4 8 2 2 2-2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-[15px] font-bold text-[#071d32]">No Idea Connections</h3>
+                    <p class="mt-3 text-xs leading-[1.6] text-slate-500">
+                        Insights stay isolated, never building into bigger understanding.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flex min-h-[180px] flex-col items-center rounded-md border border-gray-100 bg-white px-5 py-7 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+                    <div class="mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-[#ff5559] text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                            <circle cx="12" cy="12" r="9"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 11v5m0-8h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="max-w-[190px] text-[15px] font-bold leading-snug text-[#071d32]">
+                        Forgetting What You Learned
+                    </h3>
+                    <p class="mt-3 text-xs leading-[1.6] text-slate-500">
+                        Knowledge fades because there's no system to retain it.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Solution Section -->
+    <section id="how-it-works" class="bg-white px-5 py-14 sm:px-8 sm:py-20 lg:py-24">
+
+        <div class="mx-auto grid max-w-[1100px] items-center gap-10 md:grid-cols-2 md:gap-12 lg:gap-16">
+
+            <!-- Illustration -->
+            <div class="relative mx-auto flex aspect-square w-full max-w-[430px] items-center justify-center overflow-hidden rounded-lg bg-[#fafafa] p-8">
+
+                <div class="absolute inset-[13%] rounded-full border border-dashed border-gray-300"></div>
+                <div class="absolute inset-[29%] rounded-full border border-[#438e68]"></div>
+
+                <!-- Center Image -->
+                <div class="relative z-10 flex h-[120px] w-[120px] items-center justify-center rounded-full bg-white text-7xl shadow-sm sm:h-[140px] sm:w-[140px]">
+                    💡
+                </div>
+
+                <!-- Top Icon -->
+                <div class="absolute left-1/2 top-[7%] z-20 flex h-[58px] w-[58px] -translate-x-1/2 items-center justify-center rounded-full bg-white text-2xl shadow-lg sm:h-[66px] sm:w-[66px]">
+                    🔗
+                </div>
+
+                <!-- Left Icon -->
+                <div class="absolute left-[6%] top-[37%] z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-white text-2xl shadow-lg sm:h-[66px] sm:w-[66px]">
+                    📝
+                </div>
+
+                <!-- Right Icon -->
+                <div class="absolute right-[6%] top-[37%] z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-white text-2xl shadow-lg sm:h-[66px] sm:w-[66px]">
+                    🏷️
+                </div>
+
+                <!-- Bottom Left Icon -->
+                <div class="absolute bottom-[8%] left-[21%] z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-white text-2xl shadow-lg sm:h-[66px] sm:w-[66px]">
+                    📚
+                </div>
+
+                <!-- Bottom Right Icon -->
+                <div class="absolute bottom-[8%] right-[21%] z-20 flex h-[58px] w-[58px] items-center justify-center rounded-full bg-white text-2xl shadow-lg sm:h-[66px] sm:w-[66px]">
+                    💡
+                </div>
+
+            </div>
+
+            <!-- Solution Content -->
+            <div id="difference" class="py-2">
+
+                <p class="mb-3 text-[11px] font-semibold uppercase tracking-wide text-[#438e68]">
+                    The Solution
+                </p>
+
+                <h2 class="text-[28px] font-extrabold leading-[1.2] tracking-tight text-[#071d32] sm:text-[32px] lg:text-[36px]">
+                    Your Second Brain,
+                    <span class="block">Structured By Design.</span>
+                </h2>
+
+                <p class="mt-4 max-w-[460px] text-xs leading-[1.8] text-slate-500 sm:text-[13px]">
+                    Personal Knowledge Vault isn't another note-taking app.
+                    It's a thinking environment where every note, link, and
+                    summary becomes part of an interconnected web of understanding.
+                </p>
+
+                <ul class="mt-6 space-y-3">
+
+                    <li class="flex items-start gap-2 text-xs font-medium text-[#17324b] sm:text-[13px]">
+                        <span class="mt-0.5 text-[#2fbd79]">●</span>
+                        Capture ideas with structure built-in from day one
+                    </li>
+
+                    <li class="flex items-start gap-2 text-xs font-medium text-[#17324b] sm:text-[13px]">
+                        <span class="mt-0.5 text-[#2fbd79]">●</span>
+                        Connect related concepts automatically as you write
+                    </li>
+
+                    <li class="flex items-start gap-2 text-xs font-medium text-[#17324b] sm:text-[13px]">
+                        <span class="mt-0.5 text-[#2fbd79]">●</span>
+                        Build lasting knowledge through reflection prompts
+                    </li>
+
+                    <li class="flex items-start gap-2 text-xs font-medium text-[#17324b] sm:text-[13px]">
+                        <span class="mt-0.5 text-[#2fbd79]">●</span>
+                        Find anything instantly with semantic search
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Call To Action -->
+    <section id="get-started" class="bg-white px-5 pb-16 pt-4 sm:px-8 sm:pb-20">
+
+        <div class="mx-auto flex min-h-[235px] max-w-[1100px] flex-col items-center justify-center rounded-lg bg-[#f7f6f2] px-5 py-12 text-center sm:min-h-[265px] sm:px-8">
+
+            <h2 class="text-[23px] font-extrabold tracking-tight text-[#071d32] sm:text-[29px]">
+                Ready To Think More Clearly?
+            </h2>
+
+            <p class="mt-3 max-w-[480px] text-xs leading-[1.8] text-slate-500 sm:text-[13px]">
+                Join thousands of learners who are building their personal knowledge vaults.
+                <span class="block">Start free, no credit card required.</span>
+            </p>
+
+            <a href="mailto:hello@example.com?subject=Early%20Access%20Request" class="mt-5 inline-flex items-center gap-2 rounded-sm bg-[#438e68] px-4 py-3 text-xs font-bold text-white shadow-md transition hover:bg-[#347654]">
+                Get Early Access
+                <span>→</span>
+            </a>
+
+            <p class="mt-4 text-[11px] text-slate-500">
+                Free during early access • No credit card needed
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#001a30] px-5 text-white sm:px-8">
+
+        <div class="mx-auto max-w-[1100px]">
+
+            <div class="flex min-h-[170px] items-center justify-between gap-5 py-10">
+
+                <!-- Footer Logo -->
+                <a href="#home" class="flex items-center gap-1">
+                    <span class="text-3xl">💡</span>
+                    <div>
+                        <h2 class="text-[30px] font-extrabold leading-none text-[#438e68]">KV</h2>
+                        <p class="mt-1 text-[6px] font-semibold text-white">Knowledge Vault</p>
+                    </div>
+                </a>
+
+                <!-- Social Links -->
+                <div>
+                    <h3 class="mb-3 text-xs font-semibold">Social Links</h3>
+
+                    <div class="flex items-center gap-3">
+                        <a href="https://x.com/" aria-label="X" class="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#001a30] hover:bg-[#438e68] hover:text-white">𝕏</a>
+
+                        <a href="https://linkedin.com/" aria-label="LinkedIn" class="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#001a30] hover:bg-[#438e68] hover:text-white">in</a>
+
+                        <a href="https://facebook.com/" aria-label="Facebook" class="flex h-5 w-5 items-center justify-center rounded-full bg-white text-[11px] font-bold text-[#001a30] hover:bg-[#438e68] hover:text-white">f</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/15 py-6 text-center">
+                <p class="text-[11px] leading-relaxed text-slate-300">
+                    © 2026 Personal Knowledge Vault. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
